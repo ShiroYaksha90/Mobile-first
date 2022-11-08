@@ -1008,3 +1008,41 @@ height: 48px; */
 }
 
 
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+}
+
+.cont label {
+  display: none;
+}
+
+#form-head {
+  width: 327px;
+  height: 216px;
+  margin: 120px 24px 0 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.inp {
+  border: none;
+}
+
+.inp:focus {
+  outline: none;
+}
+
+#name {
+  width: 295px;
+  height: 18px;
+  margin-to
+buo-abfz-coc
