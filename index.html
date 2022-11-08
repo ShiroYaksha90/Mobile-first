@@ -217,12 +217,10 @@
         <div>
           <label for="email">Email</label>
           <input class="inp" type="email" id="email"
-       pattern=".+@gmail\.com" size="30" required placeholder="Email address">
+       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="30" required placeholder="Email address">
         </div>
         <hr class="hr-form">
-        <textarea class="inp" id="story" name="story"
-          rows="5" cols="33" minlength="6" maxlength="500">Enter text here
-        </textarea>
+        <textarea class="inp" id="story" name="story" rows="5" cols="33" minlength="6" maxlength="500" placeholder="Enter text here" required></textarea>
         <button class="form-btn" type="submit">
           Get in touch
         </button>
@@ -240,7 +238,6 @@
              <li><a href="#"><img src="./images/mail.png" alt="Gmail icon"></a></li>
            </ul>
         </div>
-           <hr id="line4">
  </div>
 </footer>
   </section>

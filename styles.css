@@ -1078,6 +1078,12 @@ height: 48px; */
   width: 327px;
   margin-top: 24px;
   background: #fbf8f7;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
 }
 
 .hr-form {
@@ -1125,17 +1131,7 @@ height: 48px; */
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 24px 99px 0 97px;
-}
-
-#line4 {
-  width: 134px;
-  height: 5px;
-  border: none;
-  margin: 13px 120px 8px 121px;
-  bottom: 8px;
-  background: #0d151e;
-  border-radius: 10px;
+  margin: 25px 99px 36px 97px;
 }
 
 button:disabled {
