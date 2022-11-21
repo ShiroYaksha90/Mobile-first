@@ -9,21 +9,41 @@
 </head>
 <body>
   <section class="back">
-      <header class="flex-head">
+      <header>
         <nav class="head-elements">
           <a href="#">Basim Aljazaeri
           </a>
-          <div class="hamburger">
-         <span class="bar"></span>
-         <span class="bar"></span>
-         <span class="bar"></span>
-          </div>
-          <ul class="nav-desktop">
-            <li><a href="#">Portifolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href=""><img src="./images/envelope.png" alt="mail icon"></a></li>
+          <ul class="nav-mobile">
+            <li class="nav-item"><a href="#portfolio">Portifolio</a></li>
+            <hr id="nav-hr">
+            <li class="nav-item"><a href="#about">About</a></li>
+            <hr id="nav-hr">
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <hr id="nav-hr">
+            <li class="nav-item"><a href=""><img id="envimg" src="./images/envelope.png" alt="mail icon"></a></li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav> 
+        <nav class="desktop-elements">
+          <a href="#">Basim Aljazaeri
+          </a>
+          <ul class="nav-desktop">
+            <li class="nav-item"><a href="#portfolio">Portifolio</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            
+            <li class="nav-item"><a href=""><img id="envimg" src="./images/envelope.png" alt="mail icon"></a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav> 
       </header>
       <div class="contents">
@@ -49,7 +69,7 @@
           </div>
       </div>
   </section>
-  <section class="projects">
+  <section class="projects" id="portfolio">
     <div class="pro-head ">
       <h1>
         My Recent Works
@@ -294,7 +314,7 @@
             </div>
   </div>
   </section>
-  <section class="aboutme">
+  <section class="aboutme" id="about">
     <div class="about-flex">
       <h1 id="about-title">
         About me
@@ -424,7 +444,7 @@
     </ul>
   </div> -->
   </section>
-  <section class="cont">
+  <section class="cont" id="contact">
     <div class="form-container">
           <h1 id="form-head">I'm always interested in hearing about new projects, 
             so if you'd like to chat please get in touch.
@@ -468,5 +488,6 @@
     </div>
    </footer>
     </section>
+    <script src="./script.js"></script>
     </body>
     </html>
