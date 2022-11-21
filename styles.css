@@ -37,6 +37,7 @@ a {
 }
 
 .head-elements {
+  position: fixed;
   width: 375px;
   display: flex;
   justify-content: space-between;
@@ -54,6 +55,8 @@ a {
   width: 16px;
   border: 1px solid #acb7c3;
   margin: 3px auto;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -61,10 +64,10 @@ a {
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: translateY(2px) rotate(45deg);
+  transform: translateY(1.9px) rotate(45deg);
 }
 
-.hamburger.active.bar:nth-child(3) {
+.hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -88,7 +91,7 @@ a {
   align-items: center;
   gap: 8px;
   background-color: #3c3a39;
-  transition: 200ms;
+  transition: 400ms;
 }
 
 .desktop-elements {
