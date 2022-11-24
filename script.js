@@ -29,3 +29,18 @@ const closebtn = document.querySelector(".closebtn");
 closebtn.addEventListener("click", () => {
     show.classList.remove("active")
 })
+
+/*///////////Form validation\\\\\\\\\ */
+
+document.getElementById("form").addEventListener("submit", (event) => {
+const email = document.getElementById("email").value;
+const emailError = document.getElementById("span");
+const form = document.getElementById("form");
+if (email === email.toLowerCase()) {
+    emailError.textContent = "Successfull";
+    form.submit();
+    } else {
+    event.preventDefault();
+    emailError.textContent = "Please enter your email in lower case letters!";
+    }
+});
