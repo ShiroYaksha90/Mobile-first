@@ -346,6 +346,177 @@ ul {
   border: 0;
 }
 
+.overlay {
+  width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgb(37 47 137 / 8%);
+    backdrop-filter: blur(6px);
+    display: none;
+}
+.popup-mobile-container {
+  width: 95%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    align-items: baseline;
+    padding: 16px;
+    gap: 24px;
+}
+
+.mo-poptitle {
+  width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mo-pophead {
+  font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+/* or 138% */
+
+
+/* Neutrals/N800 */
+
+color: #172B4D;
+}
+
+.closebtn {
+  color: #67798e;
+    font-size: 30px;
+    border: 0;
+    background: #fff;
+}
+
+.closebtn:enabled {
+  background: #fff;
+}
+
+.closebtn:hover {
+  background: #fff;
+  border:0;
+  color: #67798e;
+  cursor: pointer;
+}
+.poptech {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.poplang {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height, or 123% */
+  
+  
+  /* Theme 3 / Neutral 2 */
+  
+  color: #3C3A39;
+  border: 1px solid #DFE1E6;
+  padding: 5px;
+}
+
+.mo-popcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+#mo-popimg {
+  width: 96%;
+  height: 30vh;
+}
+
+.mo-btnpara {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.mo-poppara {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 150% */
+  
+  /* Neutrals/N600 */
+  
+  color: #344563;
+  
+}
+
+.mo-btndis {
+  display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 19px;
+}
+
+.mo-popbtn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 55%;
+  height: 6vh;
+  border: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+  
+  letter-spacing: 0.03em;
+  
+  /* Theme 2 / Neutral 11 */
+  
+  color: #fff;
+  /* margin: 16px; */
+}
+
+.overlay.active {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-attachment: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border: 1px solid #ebecf0;
+  box-shadow: 0px 48px 48px rgb(37 47 137 / 8%);
+  backdrop-filter: blur(6px);
+}
+
+.popcontainer {
+  display: none;
+}
+
 .work {
   width: calc(375px - 48px);
   margin-top: 24px;
@@ -426,7 +597,7 @@ ul {
 }
 
 #codehtml {
-  width: 32px;
+  width: 100%;
   height: 20px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -440,7 +611,7 @@ ul {
 }
 
 #codebootstrap {
-  width: 71px;
+  width: 100%;
   height: 20px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -454,7 +625,7 @@ ul {
 }
 
 #coderuby {
-  width: 37px;
+  width: 100%;
   height: 20px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -835,6 +1006,7 @@ button:hover {
   }
 
   .desktop-elements {
+    position: fixed;
     display: flex;
     flex-direction: row;
     background-color: rgb(60, 58, 57);
@@ -1124,7 +1296,7 @@ button:hover {
   #codehtml {
     /* html */
 
-    width: 32px;
+    width: 100%;
     height: 20px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -1148,7 +1320,7 @@ button:hover {
   #codebootstrap {
     /* bootstrap */
 
-    width: 71px;
+    width: 100%;
     height: 20px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -1172,7 +1344,7 @@ button:hover {
   #coderuby {
     /* Ruby */
 
-    width: 37px;
+    width: 100%;
     height: 20px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -1517,5 +1689,164 @@ button:hover {
     transition: 200ms;
     transform: scale(2, 2);
     z-index: 2;
+  }
+
+  /* pop style */
+
+  .projects .popcontainer {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgb(37 47 137 / 8%);
+    backdrop-filter: blur(6px);
+    display: none;
+  }
+  
+  .popdisplay {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    align-items: baseline;
+    padding: 24px;
+  }
+  .poptitle {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 24px 0 24px;
+  }
+  
+  .poptitle .pophead {
+    /* Project Title */
+    
+    width: 1056px;
+    height: 40px;
+    
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    /* or 138% */
+    
+    /* Neutrals/N800 */
+    
+    color: #172b4d;
+  }
+  
+  .poptitle .closebtn {
+    color: #67798e;
+    font-size: 30px;
+    border: 0;
+    background: inherit;
+  }
+  
+  .closebtn:hover {
+    background: #fff;
+    border:0;
+    color: #67798e;
+    cursor: pointer;
+  }
+  
+  .poptech {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .poplang {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 133% */
+    
+    /* Theme 3 / Neutral 2 */
+    border: 1px solid #3c3a39;
+    color: #3c3a39;
+    padding: 5px 8px;
+  }
+  
+  .popcontent {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  #popimg {
+    width: 60%;
+  }
+  
+  .btnpara {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .poppara {
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: start;
+    color: #344563;
+  }
+  
+  .btndis {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 7px;
+  }
+  .popbtn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 5vh;
+    border: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+  
+  .popcontainer.active {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    border: 1px solid #ebecf0;
+    box-shadow: 0px 48px 48px rgb(37 47 137 / 8%);
+    backdrop-filter: blur(6px);
+  }
+  
+  .overlay{
+    display: none;
   }
 }
