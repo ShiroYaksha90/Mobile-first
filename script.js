@@ -38,10 +38,10 @@ document.getElementById('form').addEventListener('submit', (event) => {
   const emailError = document.getElementById('span');
   const form = document.getElementById('form');
   if (email === email.toLowerCase()) {
-  emailError.textContent = 'Successfull';
-  form.submit();
-  } else {
-  event.preventDefault();
-  emailError.textContent = 'Please enter your email in lower case letters!';
+    emailError.textContent = 'Successfull';
+    form.submit();
+    } else {
+    event.preventDefault();
+    emailError.textContent = 'Please enter your email in lower case letters!';
   }
 });
