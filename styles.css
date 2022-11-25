@@ -163,6 +163,11 @@ ul {
   height: 20px;
 }
 
+.social > img {
+  width: 90%;
+  height: 100%;
+}
+
 .projects {
   width: 375px;
   background-color: #fff;
@@ -209,6 +214,11 @@ ul {
   justify-content: center;
   align-items: center;
   width: 375px;
+}
+
+.multi-post > img {
+  width: 85%;
+  height: 85%;
 }
 
 .multi-post h2 {
