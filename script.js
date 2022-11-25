@@ -40,7 +40,7 @@ document.getElementById('form').addEventListener('submit', (event) => {
   if (email === email.toLowerCase()) {
     emailError.textContent = 'Successfull';
     form.submit();
-    } else {
+  } else {
     event.preventDefault();
     emailError.textContent = 'Please enter your email in lower case letters!';
   }
