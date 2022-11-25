@@ -44,3 +44,21 @@ if (email === email.toLowerCase()) {
     emailError.textContent = "Please enter your email in lower case letters!";
     }
 });
+
+/* ////////// localstorage\\\\\\\\\ */
+
+const storgeForm = document.querySelector(".form");
+storgeForm.addEventListener("input", () => {
+const data = {
+    name: document.querySelector("#name").value,
+    email: document.querySelector("#email").value,
+    message: document.querySelector("#story").value,
+};
+
+localStorage.setItem("storgeForm", JSON.stringify(data));
+});
+
+const formObject = JSON.parse(localStorage.getItem("storgeForm"));
+document.querySelector("#name").value = formObject.name;
+document.querySelector("#email").value = formObject.email;
+document.querySelector("#story").value = formObject.message;
