@@ -216,7 +216,7 @@ ul {
   width: 375px;
 }
 
-.multi-post > img {
+.image-poster {
   width: 85%;
   height: 85%;
 }
@@ -258,78 +258,27 @@ ul {
   grid-template-columns: auto auto auto auto;
   padding-right: 40px;
   margin-bottom: 12px;
-  gap: 10px;
   list-style: none;
   order: 2;
 }
 
-.lang-li {
+.lang ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.lang li {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  border: 1px solid #8993a4;
   color: #091e42;
-}
-
-#css {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 10px 12px;
-  width: 49px;
-  height: 40px;
-  background: #fff;
-  border: 1px solid #8993a4;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-#html {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 12px;
-  width: 56px;
-  height: 40px;
-  background: #fff;
-  border: 1px solid #8993a4;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-#bootstrap {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 12px;
-  width: 95px;
-  height: 40px;
-  background: #fff;
-  border: 1px solid #8993a4;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-#ruby {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 12px;
-  width: 61px;
-  height: 40px;
-  background: #fff;
-  border: 1px solid #8993a4;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .btn {
@@ -544,6 +493,7 @@ ul {
   display: grid;
   grid-template-columns: 327px;
   gap: 24px;
+  margin: 24px;
 }
 
 .work-flex {
@@ -1154,11 +1104,11 @@ button:hover {
     gap: 24px;
   }
 
-  .multi-post > img {
+  .image-poster{
     width: 684px;
   }
 
-  .multi-post > img:hover {
+  .image-poster:hover {
     transition: 1s;
     transform: scale(1.1, 1.1);
     z-index: 1;
@@ -1208,7 +1158,7 @@ button:hover {
     order: 2;
   }
 
-  .work {
+  .workcards {
     width: 1440px;
   }
 
@@ -1224,27 +1174,6 @@ button:hover {
     transition: 1s;
     transform: scale(1.1, 1.1);
     z-index: 2;
-  }
-
-  .item1 > h1 {
-    display: none;
-  }
-
-  .item1 > p {
-    display: none;
-  }
-
-  .item1 > ul {
-    display: none;
-  }
-
-  .item1 > button {
-    margin-top: 375px;
-  }
-
-  .item1 {
-    background: url(./images/profesional-item1.png);
-    border: 2px solid #000;
   }
 
   .pr-btn {
@@ -1293,85 +1222,8 @@ button:hover {
     color: #fff;
   }
 
-  .item2 {
-    background: url(./images/profesional-item2.png);
-    gap: 12px;
-  }
-
   .desktop-btn {
     display: none;
-  }
-
-  #codehtml {
-    /* html */
-
-    width: 100%;
-    height: 20px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-
-    /* identical to box height, or 133% */
-
-    /* Neutrals/N0 */
-
-    color: #fff;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  #codebootstrap {
-    /* bootstrap */
-
-    width: 100%;
-    height: 20px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-
-    /* identical to box height, or 133% */
-
-    /* Neutrals/N0 */
-
-    color: #fff;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-
-  #coderuby {
-    /* Ruby */
-
-    width: 100%;
-    height: 20px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-
-    /* identical to box height, or 133% */
-
-    /* Neutrals/N0 */
-
-    color: #fff;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
 
   .code {
@@ -1385,6 +1237,15 @@ button:hover {
     order: 2;
   }
 
+  .code li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.24);
+  }
   .item3 {
     background: url(./images/profesional-item3.png);
   }
@@ -1397,18 +1258,10 @@ button:hover {
     margin-top: 180px;
   }
 
-  .item4 {
-    background: url(./images/profesional-item4.png);
-  }
-
-  .item4 > h1 {
+  .work-flex > h1 {
     display: block;
     margin-right: 56px;
-    margin-top: 180px;
-  }
-
-  .item4 > .pr-btn {
-    display: none;
+    margin-top: 140px;
   }
 
   .aboutme {
