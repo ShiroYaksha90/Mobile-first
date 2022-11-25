@@ -1,11 +1,11 @@
 const hamburger = document.querySelector('.hamburger');
 const navDesktop = document.querySelector('.nav-mobile');
-hamburger.addEventListener('click',() => {
+hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navDesktop.classList.toggle('active');
-})
+});
 
-document.querySelectorAll('.nav-item').forEach(n => n.addEventListener("click", ()=> {
+document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navDesktop.classList.remove('active');
 }));
@@ -13,13 +13,13 @@ document.querySelectorAll('.nav-item').forEach(n => n.addEventListener("click", 
 const popup = document.querySelector('.btn');
 const card = document.querySelector('.pr-btn');
 const show = document.querySelector('.popcontainer');
-const mob = document.querySelector('.overlay');
+// const mob = document.querySelector('.overlay');
 popup.addEventListener('click', () => {
-  show.classList.toggle('active')
+  show.classList.toggle('active');
 });
 
 card.addEventListener('click', () => {
-  show.classList.toggle('active')
+  show.classList.toggle('active');
 });
 
 // card.addEventListener("click",() => {
@@ -28,16 +28,16 @@ card.addEventListener('click', () => {
 
 const closebtn = document.querySelector('.closebtn');
 closebtn.addEventListener('click', () => {
-  show.classList.remove('active')
+  show.classList.remove('active');
 });
 
 /*  Form validation     */
 
 document.getElementById('form').addEventListener('submit', (event) => {
-const email = document.getElementById('email').value;
-const emailError = document.getElementById('span');
-const form = document.getElementById('form');
-if (email === email.toLowerCase()) {
+  const email = document.getElementById('email').value;
+  const emailError = document.getElementById('span');
+  const form = document.getElementById('form');
+  if (email === email.toLowerCase()) {
   emailError.textContent = 'Successfull';
   form.submit();
   } else {
