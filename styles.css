@@ -61,14 +61,17 @@ a {
 
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
+  margin: 0;
 }
 
 .hamburger.active .bar:nth-child(1) {
-  transform: translateY(1.9px) rotate(45deg);
+  transform: translateY(-3px) rotate(45deg);
+  margin: 0;
 }
 
 .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-7.5px) rotate(-45deg);
+  margin: 0;
 }
 
 #envimg {
@@ -305,9 +308,11 @@ ul {
   border: 0;
 }
 
-.overlay {
+
+/* //////////////////////\\\\\\\\\\\\\\ */
+.popcontainer {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: fixed;
   background-attachment: fixed;
   top: 0;
@@ -322,28 +327,28 @@ ul {
   visibility: hidden;
 }
 
-.popup-mobile-container {
+.popdisplay {
   width: 95%;
   display: flex;
   flex-direction: column;
   background: white;
   justify-content: center;
-  align-items: baseline;
-  padding: 16px;
-  gap: 24px;
+  padding: 12px;
 }
 
-.mo-poptitle {
+.poptitle {
   width: 95%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.mo-pophead {
-  font-family: 'Roboto', sans-serif;
+.poptitle .pophead {
+  /* Project Title */
+
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 32px;
   line-height: 44px;
 
@@ -354,15 +359,11 @@ ul {
   color: #172b4d;
 }
 
-.closebtn {
+.poptitle .closebtn {
   color: #67798e;
   font-size: 30px;
   border: 0;
-  background: #fff;
-}
-
-.closebtn:enabled {
-  background: #fff;
+  background: inherit;
 }
 
 .closebtn:hover {
@@ -374,90 +375,87 @@ ul {
 .poptech {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   justify-items: center;
 }
 
 .poplang {
-  width: 100%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 
-  /* identical to box height, or 123% */
+  /* identical to box height, or 133% */
 
   /* Theme 3 / Neutral 2 */
-
+  border: 1px solid #3c3a39;
   color: #3c3a39;
-  border: 1px solid #dfe1e6;
-  padding: 5px;
+  padding: 5px 8px;
+}
+.popcode {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: #3c3a39;
+  padding: 10px 0 12px 0;
+  background: rgba(255, 255, 255, 0.24);
+  gap: 7px;
 }
 
-.mo-popcontent {
+.popcontent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: 25px;
 }
 
-#mo-popimg {
-  width: 96%;
-  height: 30vh;
+#popimg {
+  width: 100%;
 }
 
-.mo-btnpara {
+.btnpara {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 16px;
 }
 
-.mo-poppara {
+.poppara {
+  /* width: 80%; */
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-
-  /* or 150% */
-
-  /* Neutrals/N600 */
-
+  font-size: 16px;
+  line-height: 30px;
+  text-align: start;
   color: #344563;
 }
 
-.mo-btndis {
+.btndis {
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 19px;
+  gap: 7px;
 }
 
-.mo-popbtn {
+.popbtn {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  width: 55%;
-  height: 6vh;
+  width: 40%;
+  height: 5vh;
   border: 0;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-
-  /* identical to box height, or 141% */
-
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.03em;
-
-  /* Theme 2 / Neutral 11 */
-
   color: #fff;
 }
 
-.overlay.active {
+.popcontainer.active {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -473,11 +471,6 @@ ul {
   backdrop-filter: blur(6px);
   visibility: visible;
 }
-
-.popcontainer {
-  display: none;
-}
-
 .work {
   width: calc(375px - 48px);
   margin-top: 24px;
@@ -553,53 +546,15 @@ ul {
   order: 2;
 }
 
-.code-li {
+.code li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
-}
-
-#codehtml {
-  width: 100%;
-  height: 20px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-
-  /* Neutrals/N0 */
-
-  color: #fff;
-}
-
-#codebootstrap {
-  width: 100%;
-  height: 20px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-
-  /* Neutrals/N0 */
-
-  color: #fff;
-}
-
-#coderuby {
-  width: 100%;
-  height: 20px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-
-  /* identical to box height, or 133% */
-
-  /* Neutrals/N0 */
-
-  color: #fff;
 }
 
 .pr-btn {
@@ -1555,9 +1510,9 @@ button:hover {
 
   /* pop style */
 
-  .projects .popcontainer {
+  .popcontainer {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     position: fixed;
     background-attachment: fixed;
     top: 0;
@@ -1587,14 +1542,13 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 24px 24px 0 24px;
   }
 
   .poptitle .pophead {
     /* Project Title */
 
-    width: 1056px;
-    height: 40px;
+    /* width: 1056px; */
+    /* height: 40px; */
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1626,11 +1580,9 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     justify-items: center;
-    margin-bottom: 50px;
   }
 
   .poplang {
-    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -1644,9 +1596,19 @@ button:hover {
     color: #3c3a39;
     padding: 5px 8px;
   }
+  .popcode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #3c3a39;
+    background: rgba(255, 255, 255, 0.24);
+    gap: 7px;
+}
 
   .popcontent {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     gap: 25px;
   }
@@ -1662,7 +1624,7 @@ button:hover {
   }
 
   .poppara {
-    width: 80%;
+    /* width: 80%; */
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1698,7 +1660,7 @@ button:hover {
 
   .popcontainer.active {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     position: fixed;
     background-attachment: fixed;
     top: 0;
