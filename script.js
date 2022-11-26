@@ -20,13 +20,10 @@ const mainProject = {
   liveLink: 'https://shiroyaksha90.github.io/',
   projLink: 'https://github.com/ShiroYaksha90/Mobile-first',
 };
-console.log(mainProject)
-
-const headTitle = document.querySelector ('.multi-desktop .multi')
+const headTitle = document.querySelector('.multi-desktop .multi');
 const headImg = document.queryCommandIndeterm('image-poster');
 const headDesc = document.querySelector('.multi-paragraph');
 const headLanguages = document.querySelector('.ul-lang');
-
 let lang = '';
 mainProject.headLanguages.forEach((proTech) => {
   lang = `${lang}<li>${proTech}</li>`;
@@ -38,58 +35,56 @@ headLanguages.innerHTML = lang;
 
 const procards = [
   {
-    cardId:1,
+    cardId: 1,
     cardTitle: 'Profesional Art Printing Data',
     cardDesc: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard",
     cardImg: 'profesional.png',
     cardLang: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    cardId:2,
+    cardId: 2,
     cardTitle: 'Profesional Art Printing Data',
     cardDesc: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard",
     cardImg: 'profesional.png',
     cardLang: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    cardId:3,
+    cardId: 3,
     cardTitle: 'Profesional Art Printing Data',
     cardDesc: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard",
     cardImg: 'profesional.png',
     cardLang: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    cardId:4,
+    cardId: 4,
     cardTitle: 'Profesional Art Printing Data',
     cardDesc: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard",
     cardImg: 'profesional.png',
     cardLang: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    cardId:5,
+    cardId: 5,
     cardTitle: 'Profesional Art Printing Data',
     cardDesc: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard",
     cardImg: 'profesional.png',
     cardLang: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    cardId:6,
+    cardId: 6,
     cardTitle: 'Profesional Art Printing Data',
     cardDesc: "A daily selection of privately personalized reads no accounts or sign-ups required. has been the industry's standard",
     cardImg: 'profesional.png',
     cardLang: ['html', 'bootstrap', 'Ruby'],
   },
 ];
-console.log(procards)
 const workCards = document.querySelector('.work-grid');
 workCards.innerHTML = '';
-for( let i = 0; i < procards.length ; i++){
+for (let i = 0; i < procards.length; i += 1) {
   let lang = '';
   procards[i].cardLang.forEach((cardLang) => {
     lang = `${lang}<li>${cardLang}</li>`;
-});
-
-workCards.innerHTML += `<div class="work-flex">
+  });
+  workCards.innerHTML += `<div class="work-flex">
 <h1 class="work-title">${procards[i].cardTitle}</h1>
 <p class="work-paragraph">${procards[i].cardDesc}</p>
 <ul class ="code">${lang}</ul>
@@ -97,25 +92,23 @@ workCards.innerHTML += `<div class="work-flex">
 See project
 </button>
 </div>
-`
+`;
 }
-
 const popDesktop = document.querySelector('.popcontainer');
 const openModel = document.querySelector('.btn');
 const openCards = document.querySelectorAll('.pop');
-const closePopUp = document.querySelector('.closebtn')
-openModel.addEventListener('click',() => {
-  popDesktop.classList.toggle('active')
+const closePopUp = document.querySelector('.closebtn');
+openModel.addEventListener('click', () => {
+  popDesktop.classList.toggle('active');
 });
-
-for (let i = 0 ; i< openCards.length; i++){
+for (let i = 0; i < openCards.length; i += 1) {
   openCards[i].addEventListener('click', () => {
-    popDesktop.classList.toggle('active')
-    })
+    popDesktop.classList.toggle('active');
+  });
 }
 closePopUp.addEventListener('click', () => {
-  popDesktop.classList.remove('active')
-})
+  popDesktop.classList.remove('active');
+});
 
 /*  Form validation     */
 
