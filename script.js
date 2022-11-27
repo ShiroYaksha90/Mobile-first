@@ -118,15 +118,10 @@ document.getElementById('form').addEventListener('submit', (event) => {
   const form = document.getElementById('form');
   if (email === email.toLowerCase()) {
     emailError.textContent = 'Successfull';
-<<<<<<< HEAD
-    emailError.style.color = 'green'
-=======
->>>>>>> 73cc6749204df21802c16c10afe5af84d8597e20
     form.submit();
-  } else {
+  } else {  
     event.preventDefault();
     emailError.textContent = 'Please enter your email in lower case letters!';
-<<<<<<< HEAD
     emailError.style.color = 'red'
   }
 });
@@ -148,7 +143,4 @@ const formObject = JSON.parse(localStorage.getItem("storgeForm"));
 document.querySelector("#name").value = formObject.name;
 document.querySelector("#email").value = formObject.email;
 document.querySelector("#story").value = formObject.message;
-=======
-  }
-});
->>>>>>> 73cc6749204df21802c16c10afe5af84d8597e20
+
