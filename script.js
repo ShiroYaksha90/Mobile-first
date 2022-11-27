@@ -118,10 +118,12 @@ document.getElementById('form').addEventListener('submit', (event) => {
   const form = document.getElementById('form');
   if (email === email.toLowerCase()) {
     emailError.textContent = 'Successfull';
+    emailError.style.color = 'green'
     form.submit();
   } else {
     event.preventDefault();
     emailError.textContent = 'Please enter your email in lower case letters!';
+    emailError.style.color = 'red'
   }
 });
 
