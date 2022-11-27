@@ -131,7 +131,7 @@ document.getElementById('form').addEventListener('submit', (event) => {
 
 const storgeForm = document.querySelector('.form');
 storgeForm.addEventListener('input', () => {
-const data = {
+  const data = {
     name: document.querySelector('#name').value,
     email: document.querySelector('#email').value,
     message: document.querySelector('#story').value,
