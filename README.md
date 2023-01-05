@@ -28,7 +28,7 @@
 
 > Describe your project in 1 or 2 sentences.
 
-**[Portfolio]** A professional portfolio that is a collection of examples and evidence to showcase my experience, capabilities and potential for employment opportunities and professional development. Built with HTML,CSS and JavaScript
+**[Portfolio]** A professional portfolio that is a collection of examples and evidence to showcase my experience, capabilities and potential for employment opportunities and professional development. It take's a mobile first approch desgine wise and the projects section is created dynamically using JavaScript
 
 ## 🛠 Built With <a name="built-with"></a>
 
