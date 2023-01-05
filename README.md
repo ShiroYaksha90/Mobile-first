@@ -24,7 +24,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Mobile-first] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
