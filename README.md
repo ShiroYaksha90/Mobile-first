@@ -62,7 +62,7 @@ In order to run this project you need:
 
 To get a local copy up and running follow these simple example steps:
 1. Clone this repository or download the Zip folder:
-**``git clone repo [<link>](https://github.com/habasm/HelloMicroverse.git)``**
+**``git clone repo [<link>](https://github.com/ShiroYaksha90/Portfolio.git)``**
 1. Navigate to the location of the folder in your machine:
 **``you@your-Pc-name:~$ cd <folder>``**
 
