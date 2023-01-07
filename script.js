@@ -13,15 +13,15 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
 
 /*  popup  */
 const mainProject = {
-  headTitle: 'Multi-Post Stories',
+  headTitle: 'Awesom Books',
   headImg: 'Img-Placeholder.svg.png',
-  headDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  headLanguages: ['css', 'html', 'bootstrap', 'Ruby'],
-  liveLink: 'https://shiroyaksha90.github.io/',
-  projLink: 'https://github.com/ShiroYaksha90/Mobile-first',
+  headDesc: 'Awesom Books is an education project that allow users to add desired books to the list and also delete books. It makes use of local storage to preserve the data on the web browser.',
+  headLanguages: ['css', 'html', 'JavaScript'],
+  liveLink: 'https://shiroyaksha90.github.io/Awesome-books-ES6/',
+  projLink: 'https://github.com/ShiroYaksha90/Awesome-books-ES6.git',
 };
 const headTitle = document.querySelector('.multi-desktop .multi');
-const headImg = document.queryCommandIndeterm('image-poster');
+const headImg = document.querySelector('image-poster');
 const headDesc = document.querySelector('.multi-paragraph');
 const headLanguages = document.querySelector('.ul-lang');
 let lang = '';
@@ -29,7 +29,7 @@ mainProject.headLanguages.forEach((proTech) => {
   lang = `${lang}<li>${proTech}</li>`;
 });
 headTitle.innerHTML = mainProject.headTitle;
-headImg.src = `images/${mainProject.headImg}`;
+// headImg.src = `images/${mainProject.headImg}`;
 headDesc.innerHTML = mainProject.headDesc;
 headLanguages.innerHTML = lang;
 
